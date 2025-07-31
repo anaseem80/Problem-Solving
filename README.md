@@ -49,7 +49,7 @@ This is a personal log, but feel free to star 🌟 the repo or fork it and start
 If you want to collaborate, share ideas, or discuss problem-solving approaches, feel free to reach out:
 
 - GitHub: [anaseem80](https://github.com/anaseem80)
-- LinkedIn: [[your-link](https://www.linkedin.com/in/anaseem60/)]([https://linkedin.com/in/your-link](https://www.linkedin.com/in/anaseem60/))
+- LinkedIn: [https://www.linkedin.com/in/anaseem60/](https://www.linkedin.com/in/anaseem60/)
 
 ---
 
