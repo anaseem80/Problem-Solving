@@ -24,14 +24,26 @@ Cases
 */
 
 function formatNumber(number, template) {
-  let result = template
-
-  for(let char of number.toString()) {
-    result = result.replace('#', char)
+  const digits = number.toString().split('');
+  const placeholders = (template.match(/#/g) || []).length;
+  if (digits.length < placeholders) {
+    return "Invalid phone number";
   }
 
-  return result.includes('#') ? "Invalid phone number" : result
+  let result = '';
+  let digitIndex = 0;
+
+  for (let char of template) {
+    if (char === '#') {
+      result += digits[digitIndex++];
+    } else {
+      result += char;
+    }
+  }
+  
+  return result;
 }
+
 
 console.log(formatNumber(79052479075, "+# ### ### ## ##"))
 console.log(formatNumber(79052479075, "+# (###) ### ##-##"))
