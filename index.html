@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <script src="nesting-structure-comparison.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Console Error Demo</title>
+</head>
+<body>
+  <script>
+    function simulate() {
+      try {
+        notDefinedFunction(); // this will throw ReferenceError
+      } catch (e) {
+        // After the real error, we log more stuff
+        console.error("something went wrong:", e.message);
+
+      }
+    }
+    simulate()
+  </script>
+</body>
 </html>
